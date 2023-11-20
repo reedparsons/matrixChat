@@ -30,7 +30,7 @@ async def login_and_sync( homeserver_url, username, password):
     client = AsyncClient(homeserver=homeserver_url,user="nikreed",ssl=False)
     client.add_event_callback(message_callback, RoomMessageText)
 
-    password = "dsfai48**92"
+    
     login_response = await client.login( password)
     
     # Check if login was successful
