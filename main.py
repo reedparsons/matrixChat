@@ -76,14 +76,9 @@ async def login_and_sync( homeserver_url, username, password):
     await client.close()
 
 # Get user credentials
-homeserver_url = "https://aria.im" #@nikreedog:aria-net.org input("Enter the Matrix homeserver URL: ")
-username = "nikreed"
-#"#input("Enter your Matrix username: ")
-# password = getpass.getpass("Enter your Matrix password: ")
-# Get user credentials
-
-password = "dsfai48**92" #getpass.getpass("Enter your Matrix password: ")
-
+homeserver_url = "https://aria.im" 
+username = input("Enter Username: ")
+password = input("Password")
     # Login with the provided credentials
 # Run the login and sync function
 
